@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./bankist.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bankist Apps</title>
+  </head>
+  <body>
+    <!-- Navigation Bar  -->
+    <div class="nav-bar">
+      <div class="nav-greet">
+        <h3 class="login-greet-text"> Login to get started</h3>
+      </div>
+      <form>
+          <input type="text" class="login-userName" placeholder="ID" />
+          <input type="password" class="login-passport" placeholder="PW" />
+          <button type="submit" class="login-btn-submit">Log In</button>
+      </form>
+    </div>
+    <!-- End Navigation Bar  -->
+    <!-- all data  -->
+    <div class="container">
+      <!--//START// Head with current balance and total balance  -->
+      <div class="container-head">
+        <div class="current-balance">
+          <h2>CURRENT BALANCE</h2>
+          <p>As of <span class="head-current-date">2021/11/06</span></p>
+        </div>
+        <div class="total-balance">
+          <!-- <h2>TOTAL BALCNCE</h2> -->
+          <h4 class="head-total-amt">865,145 €</h4>
+        </div>
+      </div>
+      <!--//END// Head with current balance and total balance  -->
+      <div class="container-body">
+          <!-- START movement  -->
+          <div class="movements">
+            <!-- START deposit  -->
+            <div class="movement-type-diposit">
+              <div class="movement-diposit-name"><span class="diposit" >6 DEPOSIT</span></div>
+              <div class="movement-diposite-date">2021/09/15</div>
+              <div class="movement-deposit-amt">51,245 €</div>
+            </div>
+            <!-- END deposit  -->
+            <!-- START withdrawl  -->
+            <div class="movement-type-withdrawl">
+              <div class="movement-withdrawl-name"><span class="withdrawl" >2 WITHDRAWL</span></div>
+              <div class="movement-withdrawl-date">2021/12/25</div>
+              <div class="movement-withdrawl-amt">61,200 €</div>
+            </div>
+            <!-- END withdrawl  -->
+          </div>
+          <!-- END movement  -->
+          <!-- START INPUT- LABEL  -->
+          <div class="input-label">
+            <!-- START Transfer Money  -->
+            <div class="transfer-money">
+              <h3>Transfer Money</h3>
+              <form class="form-transfer">
+                <input type="text" class="input-transfer-userId" placeholder="User Id">
+                <input type="number" class="input-transfer-amt" placeholder="Amount">
+                <button class="transfer-submitBTNs input-transfer-submitBTNs">SUBMIT</button>
+              </form>
+      
+            </div>
+            <!-- END Transfer Money  -->
+            <!-- SRART Request Money  -->
+            <div class="request-money">
+              <h3>REQUEST MONEY</h3>
+              <form class="form-request"> 
+                <input type="number" class="input-request-amt" placeholder="amount">
+                <button class="request-submitBTN input-request-submitBTN">SUBMIT</button>
+              </form>
+          
+            </div>
+            <!-- END Request Money  -->
+            <!-- START Close Money  -->
+            <div class="close-money">
+              <h3>CLOSE ACCOUNT</h3>
+              <form class="form-close-money">
+                <input type="text" class="input-close-userId" placeholder="User Id" >
+                <input type="password" class="input-close-amt" placeholder="pin" >
+                <button type="button" class="close-submitBTN input-close-submitBTN">SUBMIT</button>
+              </form>
+              
+            </div>
+            <!-- END Close Money  -->
+          </div>
+          <!-- END INPUT- LABEL  -->
+        </div>
+        <!-- START FOOTER  -->
+        <div class="footer">
+          <!-- START footer left  -->
+          <div class="left">
+            <div class="footer-in">
+              IN <span class="footer-in-amt">64,646 €</span>
+            </div>
+            <div class="footer-out">
+              OUT <span class="footer-out-amt">101,010 €</span>
+            </div>
+            <div class="footer-interest">
+              INTEREST <span class="footer-interest-amt">23,521 €</span>
+            </div>
+            <div class="sort">Sort ⬇</div>
+          </div>
+          <!-- END footer left  -->
+          <!-- START footer right  -->
+          <div class="right">
+            Your account will be logged out in
+            <span class="time-out">00:00</span>
+          </div>
+          <!-- END footer right  -->
+        </div>
+        <!-- END FOOTER  -->
+      </div>
+    </div>
+    <!-- end all data  -->
+
+      <script src="./bankist.js"></script>
+  </body>
+</html>

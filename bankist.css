@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*  */
+
+/* start nav bar  */
+.nav-bar {
+  background-color: aquamarine;
+  padding: 0.7rem 0;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.login-btn-submit {
+  background: white;
+  border: transparent;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+
+input {
+  padding: 0.3rem;
+  background: white;
+  border: transparent;
+}
+
+/* end .nav-bar  */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid black; */
+  align-items: center;
+  width: 100%;
+  opacity: 0;
+}
+
+/* ////// START head /////   */
+.container-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.current-balance {
+  text-align: center;
+  /* border: 1px solid red; */
+}
+
+.total-balance {
+  text-align: center;
+}
+
+.head-total-amt {
+  font-size: 3.5rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+/* ////// END head /////   */
+
+/* /////// START container body //////  */
+.container-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  /* border: 1px solid blue; */
+  margin: 1.5rem 0;
+  /* height: 30%; */
+}
+
+.movements {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid black; */
+  width: 40%;
+  overflow: scroll;
+  height: 20rem;
+}
+
+.movement-type-diposit {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  /* border: 1px solid orange; */
+  padding: 1rem 2rem;
+}
+
+.movement-diposit-name {
+  padding: 0.5rem;
+  border-radius: 9px;
+  background-image: linear-gradient(to bottom right, rgb(132, 206, 132), green);
+}
+
+.movement-type-withdrawl {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  /* border: 1px solid orange; */
+}
+
+.movement-withdrawl-name {
+  padding: 0.5rem;
+  border-radius: 9px;
+  background-image: linear-gradient(to bottom right, rgb(197, 140, 140), red);
+}
+
+.input-label div {
+  padding: 1rem 0.5rem;
+  margin-bottom: 1rem;
+}
+/* //////// START TRANSFER MONEY //////////  */
+
+form {
+  margin: 0.7rem 0;
+}
+
+.transfer-money {
+  background-image: linear-gradient(to bottom right, #faf884, #ffff00);
+  padding: 0.5rem;
+  border-radius: 9px;
+  margin-bottom: 0.5rem;
+}
+
+.input-transfer-amt {
+  background-image: linear-gradient(to bottom right, #faf88496, #ffff008c);
+}
+.input-transfer-userId {
+  background-image: linear-gradient(to bottom right, #faf88496, #ffff008c);
+}
+
+.form-transfer {
+  display: flex;
+  flex-direction: row;
+}
+
+/* .inlines {
+  display: inline-flex;
+  padding: 5px;
+} */
+
+.transfer-submitBTNs {
+  color: rgb(7, 7, 7);
+  font-weight: 600;
+  border: transparent;
+  /* border: 1px solid black; */
+  padding: 0.3rem;
+  background: rgb(241, 241, 183);
+  cursor: pointer;
+}
+
+/* //////// END TRANSFER MONEY //////////  */
+
+/* //////// START REQUEST MONEY //////////  */
+.request-money {
+  padding: 0.5rem;
+  border-radius: 9px;
+  margin-bottom: 0.5rem;
+  background-image: linear-gradient(to bottom right, #57e964, #16f529);
+}
+
+.input-request-amt {
+  background-image: linear-gradient(to bottom right, #57e963a6, #16f52994);
+
+  /* background: #8fbc8f; */
+}
+
+.request-submitBTN {
+  color: rgb(7, 7, 7);
+  font-weight: 600;
+  border: transparent;
+  /* border: 1px solid black; */
+  padding: 0.3rem;
+  background: rgb(122, 240, 122);
+  cursor: pointer;
+}
+/* //////// END REQUEST MONEY //////////  */
+
+/* //////// START CLOSE MONEY //////////  */
+.close-money {
+  padding: 0.5rem;
+  border-radius: 9px;
+  margin-bottom: 0.5rem;
+  background-image: linear-gradient(to bottom right, #ff6347, #ff0000);
+}
+
+.input-close-userId {
+  background-image: linear-gradient(to bottom right, #ff634786, #ff000086);
+}
+.input-close-amt {
+  background-image: linear-gradient(to bottom right, #ff634786, #ff000086);
+}
+
+.close-submitBTN {
+  cursor: pointer;
+  color: rgb(7, 7, 7);
+  font-weight: 600;
+  border: transparent;
+  /* border: 1px solid black; */
+  padding: 0.3rem;
+  background: rgba(209, 160, 160, 0.527);
+}
+/* //////// END CLOSE MONEY //////////  */
+/* /////// END container body //////  */
+
+/* ///////// START FOOTER ///////////  */
+.footer {
+  /* border: 1px solid black; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1rem 0;
+  font-size: 1rem;
+}
+
+.footer .left {
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid black; */
+  width: 45%;
+  justify-content: space-around;
+}
+
+.footer-in-amt {
+  color: green;
+  font-size: 1.5rem;
+}
+
+.footer-out-amt {
+  color: red;
+  font-size: 1.5rem;
+}
+
+.footer-interest-amt {
+  color: green;
+  font-size: 1.5rem;
+}
+
+.sort {
+  cursor: pointer;
+}
+
+.time-out {
+  font-weight: 600;
+}
+/* ///////// END FOOTER ///////////  */
